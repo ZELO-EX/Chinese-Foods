@@ -1,0 +1,226 @@
+/* ===== 导入相关CSS文件 ===== */
+@import url(./var.css);
+
+/* ===== 初始化全局元素 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "仿宋", serif;
+}
+body {
+    background-color: var(--color-white);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ===== header 页首 ===== */
+.header * {
+    z-index: 64;
+}
+.header {
+    display: grid;
+    height: var(--font-size-v5);
+    grid-template-columns: 10% 65% 25%;
+    justify-content: center;
+    background-color: var(--color-brown);
+    color: var(--color-grey);
+}
+
+/* ===== header LOGO ===== */
+.header-logo-link > img {
+    margin: 0 var(--font-size-v2);
+    height: var(--font-size-v5);
+    aspect-ratio: 16 / 9;
+}
+
+/* ===== header 导航栏 ===== */
+
+.header-nav-area > ul,
+.header-nav-button > ul {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: var(--font-size-v5);
+    line-height: var(--font-size-v5);
+}
+
+.header-nav-button {
+    position: relative;
+}
+
+.header-nav-button > ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: var(--font-size-v5);
+    line-height: var(--font-size-v5);
+}
+
+.header-nav-button > a,
+.header-nav-button-child > a {
+    display: block;
+    width: auto;
+    white-space: nowrap;
+    color: var(--color-white);
+    font-size: var(--font-size-v3);
+    text-decoration: none;
+    padding: 0 var(--font-size-v3);
+}
+.header-nav-button-child > a {
+    font-size: 0;
+    padding: 0;
+    background-color: var(--color-brown-warmer);
+    transition: all 0.5s ease 0.12s;
+}
+
+.header-nav-button:hover > a {
+    color: var(--color-gold);
+}
+
+.header-nav-button:last-child:hover .header-nav-button-child > a {
+    font-size: var(--font-size-v3);
+    padding: 0 var(--font-size-v3);
+}
+
+.header-nav-button:last-child:hover .header-nav-button-child:hover > a {
+    color: var(--color-gold);
+    background-color: var(--color-brown);
+}
+
+/* ===== header 账号方式选择 ===== */
+.header-account-area {
+    height: var(--font-size-v5);
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-account-button,
+.header-account-button:visited {
+    padding: var(--font-size-v2);
+    line-height: var(--font-size-v5);
+    font-size: var(--font-size-v3);
+    color: var(--color-white);
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header-account-button:hover {
+    color: var(--color-gold);
+}
+
+/* ===== header 账号下拉菜单 ===== */
+
+#account-actions-logged-in {
+    display: none;
+}
+
+#account-actions-logged-in .user-dropdown {
+    position: relative;
+    display: inline-block;
+    height: var(--font-size-v5);
+    line-height: var(--font-size-v5);
+}
+
+#account-actions-logged-in .user-dropdown > a {
+    display: block;
+    height: 100%;
+    padding: 0 var(--font-size-v2);
+    color: var(--color-white);
+    font-size: var(--font-size-v3);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#account-actions-logged-in .user-dropdown:hover > a {
+    color: var(--color-gold);
+}
+
+#account-actions-logged-in .user-dropdown > ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color-brown-warmer);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    display: none;
+    list-style: none;
+}
+
+#account-actions-logged-in .user-dropdown:hover > ul {
+    display: block;
+}
+
+#account-actions-logged-in .user-dropdown .user-dropdown-child {
+    width: 100%;
+}
+
+#account-actions-logged-in .user-dropdown .user-dropdown-child > a {
+    display: block;
+    padding: 0 var(--font-size-v2);
+    color: var(--color-white);
+    font-size: var(--font-size-v3);
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: max-content;
+}
+
+#account-actions-logged-in .user-dropdown .user-dropdown-child:hover > a {
+    background-color: var(--color-brown);
+    color: var(--color-gold);
+}
+/* --- END 已登录状态下的用户名下拉菜单专属样式 --- */
+
+/* ========== footer 页脚 ========== */
+.footer {
+    height: var(--font-size-v6);
+    background-color: var(--color-brown);
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer * {
+    z-index: 64;
+    color: var(--color-white);
+    font-size: var(--font-size-v2);
+}
+
+.footer-icon-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-icon-child {
+    display: block;
+    width: var(--font-size-v4);
+    height: var(--font-size-v4);
+    margin: 0 var(--font-size-v4);
+}
+
+.footer-icon-child > svg > path {
+    fill: var(--color-white);
+    transition: fill 0.2s ease;
+}
+
+.footer-icon-child > svg {
+    width: var(--font-size-v4);
+    height: var(--font-size-v4);
+}
+
+.icon-github:hover > svg > path {
+    fill: #000;
+}
+
+.icon-bilibili:hover > svg > path {
+    fill: #F69;
+}

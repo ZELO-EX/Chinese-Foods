@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>中华美食天地 - 菜系介绍</title>
+        <link rel="stylesheet" href="./css/cuisine-intro.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-logo-area">
+                <a
+                    class="header-logo-link"
+                    href="./index.html"
+                    title="中华美食概述LOGO"
+                >
+                    <img src="./res/img/logo.png" alt="Chinese Food LOGO" />
+                </a>
+            </div>
+            <nav class="header-nav-area">
+                <ul>
+                    <li class="header-nav-button">
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li class="header-nav-button">
+                        <a href="./classic-dishes.html">菜系导航 </a>
+                        <ul>
+                            <li class="header-nav-button-child">
+                                <a href="#"></a>
+                            </li>
+                            <li class="header-nav-button-child">
+                                <a href="#"></a>
+                            </li>
+                            <li class="header-nav-button-child">
+                                <a href="#"></a>
+                            </li>
+                            <li class="header-nav-button-child">
+                                <a href="#"></a>
+                            </li>
+                            <li class="header-nav-button-child">
+                                <a href="#"></a>
+                            </li>
+                            <li class="header-nav-button-child">
+                                <a href="#"></a>
+                            </li>
+                            <li class="header-nav-button-child">
+                                <a href="#"></a>
+                            </li>
+                            <li class="header-nav-button-child">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-account-area">
+                <span id="account-actions-logged-out">
+                    <a class="header-account-button" href="./login.html"
+                        >登录</a
+                    >
+
+                    <a class="header-account-button" href="./signup.html"
+                        >注册</a
+                    >
+                </span>
+                <span id="account-actions-logged-in" style="display: none">
+                    <div class="user-dropdown">
+                        <a href="#" id="user-dropdown-header"
+                            >Invaild Username</a
+                        >
+                        <ul class="user-dropdown-menu">
+                            <li class="user-dropdown-child">
+                                <a
+                                    href="#"
+                                    onclick="deleteUser(prompt('请输入用户名以确认身份:'))"
+                                    >注销账号</a
+                                >
+                            </li>
+
+                            <li class="user-dropdown-child">
+                                <a href="#" onclick="logoutUser()">退出登录</a>
+                            </li>
+                        </ul>
+                    </div>
+                </span>
+            </div>
+        </header>
+        <main>
+            <div class="cuisine-grid">
+                <div class="cuisine-title-grid"></div>
+                <div class="cuisine-dishes-grid">
+                    <div class="cuisine-dishes-cell">
+                        <a href="#"><img src="" alt="" /><span></span></a>
+                    </div>
+                    <div class="cuisine-dishes-cell">
+                        <a href="#"><img src="" alt="" /><span></span></a>
+                    </div>
+                    <div class="cuisine-dishes-cell">
+                        <a href="#"><img src="" alt="" /><span></span></a>
+                    </div>
+                </div>
+                <div class="cuisine-details-grid">
+                    <div id="name" class="cuisine-info-grid info-name">
+                        <div class="cuisine-info-cell info-title-cell">
+                            菜系名称
+                        </div>
+                        <div class="cuisine-info-cell info-content-cell"></div>
+                    </div>
+                    <div
+                        id="description"
+                        class="cuisine-info-grid info-description"
+                    >
+                        <div class="cuisine-info-cell info-title-cell">
+                            菜系介绍
+                        </div>
+                        <div class="cuisine-info-cell info-content-cell"></div>
+                    </div>
+                    <div
+                        id="core-features"
+                        class="cuisine-info-grid info-core-features"
+                    >
+                        <div class="cuisine-info-cell info-title-cell">
+                            主要特征
+                        </div>
+                        <div class="cuisine-info-cell info-content-cell"></div>
+                    </div>
+                    <div id="flavors" class="cuisine-info-grid info-flavors">
+                        <div class="cuisine-info-cell info-title-cell">
+                            烹饪风味
+                        </div>
+                        <div class="cuisine-info-cell info-content-cell"></div>
+                    </div>
+                    <div
+                        id="cooking-methods"
+                        class="cuisine-info-grid info-cooking-methods"
+                    >
+                        <div class="cuisine-info-cell info-title-cell">
+                            烹饪方式
+                        </div>
+                        <div class="cuisine-info-cell info-content-cell"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <span class="footer-author">Website made by ZELO_EX.</span>
+            <address class="footer-icon-set">
+                <a
+                    href="https://github.com/ZELO-EX"
+                    class="footer-icon-child icon-github"
+                >
+                    <svg
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                    >
+                        <title>GitHub</title>
+                        <path
+                            d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"
+                        ></path>
+                    </svg>
+                </a>
+                <a
+                    href="https://space.bilibili.com/529804852"
+                    class="footer-icon-child icon-bilibili"
+                >
+                    <svg
+                        role="img"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <title>Bilibili</title>
+                        <path
+                            d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373Z"
+                        />
+                    </svg>
+                </a>
+            </address>
+        </footer>
+        <script src="./js/foods-reader.js"></script>
+        <script src="./js/page-structure.js"></script>
+        <script>
+            (async () => {
+                let url = new URL(window.location);
+                await loadCuisineMenuWithChild(".header-nav-button-child", "");
+                await loadCuisineGrid(url.searchParams.get("cuisine_id"));
+                await loadCuisineImage(url.searchParams.get("cuisine_id"));
+            })();
+        </script>
+    </body>
+</html>

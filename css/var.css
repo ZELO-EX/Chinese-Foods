@@ -1,0 +1,26 @@
+:root {
+    /* 定义一个颜色列表 */
+    --color-red: #c00;
+    --color-red-warmer: #ff4500;
+    --color-red-cooler: #9b1d20;
+    --color-gold: #d4af37;
+    --color-gold-warmer: #e6a810;
+    --color-gold-cooler: #b89b72;
+    --color-white: #f8f5f0;
+    --color-white-warmer: #ffe4cc;
+    --color-white-cooler: #f0f8ff;
+    --color-grey: #f0f0f0;
+    --color-grey-warmer: #e0ddd5;
+    --color-grey-cooler: #d3d3d3;
+    --color-brown: #3c2f2f;
+    --color-brown-warmer: #8b4513;
+    --color-brown-cooler: #2f2c2c;
+
+    /* 定义一个字宽列表 */
+    --font-size-v1: clamp(12px, 0.8vw + 4px, 20px);
+    --font-size-v2: clamp(14px, 1vw + 4px, 24px);
+    --font-size-v3: clamp(16px, 1.2vw + 4px, 28px);
+    --font-size-v4: clamp(20px, 1.6vw + 4px, 36px);
+    --font-size-v5: clamp(26px, 2.4vw + 4px, 48px);
+    --font-size-v6: clamp(32px, 3.2vw + 4px, 64px);
+}

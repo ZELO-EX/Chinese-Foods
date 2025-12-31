@@ -1,0 +1,83 @@
+@import url(./page-structure.css);
+
+.cuisine-grid {
+    margin: var(--font-size-v6) auto;
+    width: 80svw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 1px solid black;
+}
+.cuisine-title-grid {
+    grid-column: 1 / 7;
+    grid-row: 1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-v6);
+    font-weight: bold;
+}
+.cuisine-dishes-grid {
+    grid-column: 1 / 2;
+    grid-row: 2 / 7;
+    border: 1px solid black;
+}
+.cuisine-details-grid {
+    grid-column: 2 / 7;
+    grid-row: 2 / 7;
+    font-size: var(--font-size-v3);
+    display: grid;
+    grid-template-rows: 1fr 5fr repeat(3, 1fr);
+}
+.cuisine-info-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.cuisine-info-cell {
+    border: 1px solid black;
+}
+.info-title-cell {
+    grid-column: 1;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-content-cell {
+    grid-column: 2 / 7;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.info-content-cell-child {
+    display: inline-block;
+    background-color: var(--color-gold);
+    color: var(--color-red-cooler);
+    margin: 3px 4px;
+    padding: 0 var(--font-size-v3);
+    border-radius: var(--font-size-v2);
+}
+.cuisine-dishes-cell a {
+    display: block;
+    text-decoration: none;
+}
+.cuisine-dishes-cell span {
+    display: block;
+    background-color: var(--color-gold);
+    color: var(--color-red-cooler);
+    font-weight: normal;
+    font-size: var(--font-size-v3);
+    text-align: center;
+    transition: all 0.3s;
+}
+.cuisine-dishes-cell:hover span {
+    color: var(--color-red);
+    font-weight: bold;
+}
+.cuisine-dishes-cell img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    vertical-align: middle;
+}

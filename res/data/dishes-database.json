@@ -1,0 +1,305 @@
+{
+    "cuisine-list": [
+        {
+            "id": "lu",
+            "name": "鲁菜",
+            "description": "鲁菜是中国传统四大菜系之一，中国八大菜系之一，更是中国八大菜系中唯一自发的菜系，是北方菜的代表，也是中国家常菜的基础，是历史最悠久、技法最丰富、最见功力的菜系。",
+            "core-features": [
+                "咸鲜为主",
+                "火候特点",
+                "精于制汤",
+                "善烹海味",
+                "注重礼仪"
+            ],
+            "flavors": [
+                "原味",
+                "咸鲜"
+            ],
+            "cooking-methods": [
+                "爆",
+                "炒",
+                "烧",
+                "扒",
+                "炸",
+                "熘",
+                "蒸"
+            ],
+            "dishes-list": [
+                {
+                    "id": "sweet-and-sour-carp",
+                    "name": "糖醋鲤鱼"
+                },
+                {
+                    "id": "braised-prawns",
+                    "name": "油焖大虾"
+                },
+                {
+                    "id": "braised-intestines-in-brown-sauce",
+                    "name": "九转大肠"
+                }
+            ]
+        },
+        {
+            "id": "chuan",
+            "name": "川菜",
+            "description": "口味麻辣为主，菜式多样，口味清鲜醇浓并重，以善用麻辣调味（鱼香、麻辣、辣子、陈皮、椒麻、怪味、酸辣诸味）。",
+            "core-features": [
+                "百菜百味",
+                "善用麻辣",
+                "调味多变",
+                "菜式多样"
+            ],
+            "flavors": [
+                "麻辣",
+                "鱼香",
+                "怪味"
+            ],
+            "cooking-methods": [
+                "小炒",
+                "干煸",
+                "干烧",
+                "水煮",
+                "宫保",
+                "凉拌",
+                "炝"
+            ],
+            "dishes-list": [
+                {
+                    "id": "mapo-doufu",
+                    "name": "麻婆豆腐"
+                },
+                {
+                    "id": "kung-pao-chicken",
+                    "name": "宫保鸡丁"
+                },
+                {
+                    "id": "twice-cooked-pork",
+                    "name": "回锅肉"
+                }
+            ]
+        },
+        {
+            "id": "yue",
+            "name": "粤菜",
+            "description": "口味鲜香为主。选料精细，清而不淡，鲜而不俗，嫩而不生，油而不腻。擅长小炒，要求掌握火候和油温恰到好处。还兼容许多西菜做法，讲究菜的气势、档次。",
+            "core-features": [
+                "清鲜爽嫩",
+                "选料精细",
+                "火候精准",
+                "兼容中西"
+            ],
+            "flavors": [
+                "鲜香"
+            ],
+            "cooking-methods": [
+                "小炒",
+                "清蒸",
+                "白灼",
+                "煲",
+                "炖",
+                "焗",
+                "焖"
+            ],
+            "dishes-list": [
+                {
+                    "id": "white-cut-chicken",
+                    "name": "白切鸡"
+                },
+                {
+                    "id": "roast-suckling-pig",
+                    "name": "烤乳猪"
+                },
+                {
+                    "id": "shrimp-dumplings",
+                    "name": "虾饺"
+                }
+            ]
+        },
+        {
+            "id": "su",
+            "name": "苏菜",
+            "description": "口味清淡为主。用料严谨，注重配色，讲究造型，四季有别。烹调技艺以炖、焖、煨著称；重视调汤，保持原汁，口味平和。善用蔬菜。其中淮扬菜，讲究选料和刀工，擅长制汤；苏南菜口味偏甜，注重制酱油，善用香糟、黄酒调味。",
+            "core-features": [
+                "刀工精细",
+                "口味平和",
+                "注重造型",
+                "四季有别"
+            ],
+            "flavors": [
+                "清淡",
+                "咸鲜"
+            ],
+            "cooking-methods": [
+                "炖",
+                "焖",
+                "煨",
+                "烧",
+                "烩",
+                "蒸"
+            ],
+            "dishes-list": [
+                {
+                    "id": "nanjing-salted-duck",
+                    "name": "南京盐水鸭"
+                },
+                {
+                    "id": "squirrel-mandarin-fish",
+                    "name": "松鼠鳜鱼"
+                },
+                {
+                    "id": "lion-head-meatball",
+                    "name": "清炖蟹粉狮子头"
+                }
+            ]
+        },
+        {
+            "id": "min",
+            "name": "闽菜",
+            "description": "口味鲜香为主。尤以“香”、“味”见长，其清鲜、和醇、荤香、不腻的风格。三大特色，一长于红糟调味，二长于制汤，三长于使用糖醋。",
+            "core-features": [
+                "红糟调味",
+                "精于制汤",
+                "善用糖醋",
+                "清鲜和醇"
+            ],
+            "flavors": [
+                "鲜香",
+                "酸甜"
+            ],
+            "cooking-methods": [
+                "溜",
+                "蒸",
+                "炒",
+                "煨",
+                "炖",
+                "醉"
+            ],
+            "dishes-list": [
+                {
+                    "id": "buddha-jumps-over-the-wall",
+                    "name": "佛跳墙"
+                },
+                {
+                    "id": "fried-oyster",
+                    "name": "蚵仔煎"
+                },
+                {
+                    "id": "drunken-rib",
+                    "name": "醉排骨"
+                }
+            ]
+        },
+        {
+            "id": "zhe",
+            "name": "浙菜",
+            "description": "口味清淡为主。菜式小巧玲珑，清俊逸秀，菜品鲜美滑嫩，脆软清爽。运用香糟、黄酒调味。烹调技法丰富，尤为在烹制海鲜河鲜有其独到之处。口味注重清鲜脆嫩，保持原料的本色和真味。菜品形态讲究，精巧细腻，清秀雅丽。其中北部口味偏甜，西部口味偏辣，东南部口味偏咸。",
+            "core-features": [
+                "清鲜脆嫩",
+                "精巧细腻",
+                "保持本味",
+                "善烹河鲜"
+            ],
+            "flavors": [
+                "清淡",
+                "咸鲜"
+            ],
+            "cooking-methods": [
+                "蒸",
+                "烩",
+                "熘",
+                "炖",
+                "炒",
+                "烧"
+            ],
+            "dishes-list": [
+                {
+                    "id": "dongpo's-braised-pork",
+                    "name": "东坡肉"
+                },
+                {
+                    "id": "west-lake-fish-in-vinegar-gravy",
+                    "name": "西湖醋鱼"
+                },
+                {
+                    "id": "souteed-shrimp-mear-with-longjing-tea",
+                    "name": "龙井虾仁"
+                }
+            ]
+        },
+        {
+            "id": "xiang",
+            "name": "湘菜",
+            "description": "口味香辣为主，品种繁多。色泽上油重色浓，讲求实惠；香辣、香鲜、软嫩。重视原料互相搭配，滋味互相渗透。湘菜调味尤重香辣。相对而言，湘菜的煨功夫更胜一筹，几乎达到炉火纯青的地步。煨，在色泽变化上可分为红煨、白煨，在调味方面有清汤煨、浓汤煨和奶汤煨。小火慢炖，原汁原味。",
+            "core-features": [
+                "香辣突出",
+                "煨功精湛",
+                "油重色浓",
+                "滋味渗透"
+            ],
+            "flavors": [
+                "香辣",
+                "咸鲜"
+            ],
+            "cooking-methods": [
+                "煨",
+                "炖",
+                "蒸",
+                "炒",
+                "腊",
+                "熏"
+            ],
+            "dishes-list": [
+                {
+                    "id": "chop-bell-pepper-fish-head",
+                    "name": "剁椒鱼头"
+                },
+                {
+                    "id": "dong-an-chicken",
+                    "name": "东安子鸡"
+                },
+                {
+                    "id": "steamed-rice-powder-and-pork",
+                    "name": "粉蒸肉"
+                }
+            ]
+        },
+        {
+            "id": "hui",
+            "name": "徽菜",
+            "description": "口味鲜辣为主。擅长烧、炖、蒸，而爆、炒菜少，重油、重色，重火功。重火工是历来的，其独到之处集中体现于擅长烧、炖、熏、蒸类的功夫菜上，不同菜肴使用不同的控火技术，形成酥、嫩、香、鲜独特风味，其中最能体现徽式特色的是滑烧、清炖和生熏法。",
+            "core-features": [
+                "重火功",
+                "重油重色",
+                "山野风味",
+                "功夫菜"
+            ],
+            "flavors": [
+                "鲜辣",
+                "咸鲜"
+            ],
+            "cooking-methods": [
+                "烧",
+                "炖",
+                "蒸",
+                "熏",
+                "焖",
+                "滑烧",
+                "清炖"
+            ],
+            "dishes-list": [
+                {
+                    "id": "hui-cuisine-braised-snapper",
+                    "name": "红烧划水"
+                },
+                {
+                    "id": "stinky-mandarin-fish",
+                    "name": "臭鳜鱼"
+                },
+                {
+                    "id": "fuliji-chicken-soup",
+                    "name": "符离集烧鸡"
+                }
+            ]
+        }
+    ]
+}

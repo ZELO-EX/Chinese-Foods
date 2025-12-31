@@ -1,0 +1,130 @@
+/* ===== 导入相关CSS文件 ===== */
+@import url(./var.css);
+
+/* ===== 卡片 ===== */
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    background: radial-gradient(
+        var(--color-white) 0%,
+        var(--color-white-warmer) 50%
+    );
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: var(--font-size-v3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: clamp(360px, 30vw, 600px);
+    border: 1px solid var(--color-gold-cooler);
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card-header-title {
+    font-size: var(--font-size-v5);
+    color: var(--color-gold-cooler);
+    text-decoration: none;
+}
+
+.card-header-subtitle {
+    font-size: var(--font-size-v3);
+    color: var(--color-gold);
+    margin-top: 4px;
+    margin-bottom: var(--font-size-v3);
+}
+
+.account-form-group:not(:last-child) {
+    margin-bottom: var(--font-size-v3);
+}
+.account-form-group label {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--color-brown-cooler);
+    font-size: var(--font-size-v1);
+    font-weight: bold;
+}
+
+.form-input {
+    width: calc(100% - var(--font-size-v1) * 2);
+    padding: var(--font-size-v1);
+    border: 2px solid var(--color-gold);
+    border-radius: 8px;
+    font-size: var(--font-size-v1);
+    background: var(--color-white);
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.account-submit {
+    width: 100%;
+    padding: 12px;
+    margin-top: var(--font-size-v1);
+    margin-bottom: var(--font-size-v3);
+    background: var(--color-gold);
+    color: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    font-size: var(--font-size-v3);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.account-submit:hover {
+    background: var(--color-gold-warmer);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-v1);
+}
+
+.choose-box {
+    display: flex;
+    align-items: center;
+}
+
+.choose-box input {
+    margin-right: 5px;
+}
+
+.choose-box-label {
+    color: var(--color-gold-warmer);
+    font-weight: bold;
+}
+
+.redirect-link {
+    color: var(--color-gold-cooler);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redirect-link:hover {
+    text-decoration: underline;
+}
+
+.card-footer {
+    text-align: center;
+    font-size: var(--font-size-v1);
+}
+
+.card-footer a {
+    color: var(--color-gold-cooler);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}

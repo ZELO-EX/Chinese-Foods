@@ -1,0 +1,52 @@
+@import url(./page-structure.css);
+
+.cuisine-grid {
+    width: 80svw;
+    margin: var(--font-size-v3) auto;
+    padding: 0;
+}
+.cuisine-child {
+    border: 2px solid var(--color-gold);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.cuisine-child-title {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    font-size: var(--font-size-v5);
+    font-weight: bold;
+    border: 2px solid var(--color-gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-red-cooler);
+    text-decoration: none;
+}
+.cuisine-child-title:hover {
+    color: var(--color-red);
+}
+.cuisine-child-dish {
+    grid-row: 2 / 6;
+    border: 2px solid var(--color-gold);
+    background-color: var(--color-gold);
+    text-decoration: none;
+}
+.cuisine-child-dish > img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    vertical-align: middle;
+}
+.cuisine-child-dish span {
+    background-color: var(--color-gold);
+    color: var(--color-red-cooler);
+    font-weight: normal;
+    font-size: var(--font-size-v4);
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.cuisine-child-dish:hover span {
+    color: var(--color-red);
+    font-weight: bold;
+}

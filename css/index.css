@@ -1,0 +1,221 @@
+@import url(./page-structure.css);
+
+.banner-main {
+    width: 70svw;
+    height: 30svw;
+    margin: var(--font-size-v4) auto;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    z-index: 1;
+    transition: all 1s;
+}
+
+/* ===== banner 菜系侧边栏 ===== */
+
+.banner-cuisine {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-brown);
+    border-radius: var(--font-size-v4) 0 0 var(--font-size-v4);
+    border: 5px solid var(--color-gold-warmer);
+    z-index: 2;
+}
+
+.banner-cuisine-child {
+    position: relative;
+    width: 100%;
+    height: var(--font-size-v5);
+    line-height: var(--font-size-v5);
+    font-size: var(--font-size-v2);
+    border-bottom: 2px solid var(--color-white);
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 4;
+}
+
+.banner-cuisine-child > a {
+    display: block;
+    color: var(--color-gold);
+    font-size: var(--font-size-v2);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.banner-cuisine-child:hover > a {
+    color: var(--color-gold-warmer);
+    font-size: var(--font-size-v3);
+}
+
+/* ===== banner 菜品侧边栏 ===== */
+
+.banner-dishes {
+    position: absolute;
+    width: 0;
+    height: auto;
+    left: 100%;
+    top: -3px;
+    overflow: hidden;
+    z-index: 8;
+    background-color: var(--color-brown);
+    border: 3px solid var(--color-gold-warmer);
+    border-left-width: 0;
+    border-right-width: 0;
+    transition: all 0.5s;
+}
+
+.banner-dishes-child {
+    width: 100%;
+    height: var(--font-size-v5);
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.banner-dishes-child:not(:last-child) {
+    border-bottom: 2px solid var(--color-white);
+}
+
+.banner-dishes-child > a {
+    display: block;
+    color: var(--color-gold);
+    text-decoration: none;
+    font-size: 0;
+    transition: all 0.5s;
+}
+
+.banner-cuisine-child:hover > .banner-dishes {
+    width: 100%;
+    border-left-width: 3px;
+    border-right-width: 3px;
+}
+.banner-dishes-child:hover a {
+    color: var(--color-gold-warmer);
+    font-size: var(--font-size-v3);
+}
+
+.banner-cuisine-child:hover .banner-dishes-child:not(:hover) > a {
+    color: var(--color-gold);
+    font-size: var(--font-size-v2);
+}
+
+/* ===== banner 轮播图 ===== */
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 5px solid var(--color-gold-warmer);
+    border-left: 0;
+    border-radius: 0 var(--font-size-v4) var(--font-size-v4) 0;
+    z-index: 1;
+}
+
+.banner-slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+.banner-slide {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner-slide > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    object-fit: fill;
+    transition: all 0.5s ease 0.2s;
+}
+
+.banner-slide:hover > img {
+    width: 120%;
+    height: 120%;
+}
+
+.banner-slide > .slide-info {
+    position: absolute;
+    width: calc(var(--font-size-v5) * 5);
+    height: var(--font-size-v5);
+    line-height: var(--font-size-v5);
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    translate: calc(-1 * var(--font-size-v1)) calc(-1 * var(--font-size-v1));
+    background-color: var(--color-brown);
+    color: var(--color-gold);
+    border-radius: var(--font-size-v1);
+    font-size: var(--font-size-v2);
+    text-decoration: none;
+    transition: all 0.1s;
+}
+
+.banner-slide > .slide-info:hover {
+    color: var(--color-gold-warmer);
+    font-size: calc(var(--font-size-v3));
+}
+
+.banner-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-grey);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: var(--color-grey-warmer);
+}
+
+.banner-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: var(--color-white);
+    background-color: var(--color-brown);
+    border: none;
+    border-radius: 50%;
+    width: var(--font-size-v5);
+    height: var(--font-size-v5);
+    line-height: var(--font-size-v5);
+    font-size: var(--font-size-v4);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, width 0.1s, height 0.1s, font-size 0.1s,
+        line-height 0.1s;
+}
+
+.banner-nav-btn:hover {
+    background-color: var(--color-brown-cooler);
+    width: var(--font-size-v6);
+    height: var(--font-size-v6);
+    line-height: var(--font-size-v6);
+    font-size: var(--font-size-v5);
+}
+
+.prev-btn {
+    left: var(--font-size-v3);
+}
+
+.next-btn {
+    right: var(--font-size-v3);
+}
