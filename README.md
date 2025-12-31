@@ -4,7 +4,7 @@
 
 ## 🚀 项目预览
 
-[点击这里查看在线演示](https://ZELO-EX.github.io/Chinese-Foods/index.html)
+暂不支持预览，单击[这里](# 🏃 快速开始)查看操作步骤
 
 ## 📖 项目介绍
 
